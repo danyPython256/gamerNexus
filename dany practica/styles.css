@@ -1,0 +1,23 @@
+  .carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-inner {
+    white-space: nowrap; 
+    transition: transform 1s ease; 
+    height: auto; 
+}
+
+.carousel-inner img {
+    display: inline-block; 
+    max-width: 100%; 
+    height: auto;
+    vertical-align: top; 
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover; 
+}

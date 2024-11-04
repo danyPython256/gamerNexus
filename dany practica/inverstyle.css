@@ -1,0 +1,70 @@
+
+body {
+    background-color: #1c1c1c; 
+    color: #fff; 
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+header {
+    background-color: #333; 
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.nav-link,
+.card-title,
+.card-text {
+    color: #fff; 
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+
+.card .btn {
+    background-color: #ff0000; 
+    color: #fff;
+    border-color: #ff0000;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.card form {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.form-label {
+    color: #fff; 
+}
+
+.form-control {
+    background-color: #1c1c1c; 
+    color: #fff;
+    border-color: #ff0000; 
+}
+
+.btn-primary {
+    background-color: #ff0000; 
+    border-color: #ff0000;
+}
+.card-img-top{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}

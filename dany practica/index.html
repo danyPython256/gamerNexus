@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <style>
+            
+            body {
+                background-color: black;
+                color: red;
+            }
+
+            .card{
+                background-color: black;
+                color: red;
+            }
+
+            .card .btn{
+                background-color: white;
+                color: black;
+            }
+    
+            
+            .nav-link,
+            .card-title,
+            .card-text {
+                color: red;
+            }
+    
+            .nav-link.active {
+                font-weight: bold;
+                color: white;
+            }
+        </style>
+</head>
+
+<body>
+    <header>
+        <h1>Games Nexus</h1>
+
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">QUIEN SOMOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="inversores.html">INVERSORES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registro.html">REGISTRO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carrito.html">
+                    🛒 Carrito <span id="carrito-count">0</span>
+                </a>
+            </li>
+        </ul>
+
+    </header>
+    <h2>Bienvenidos a nuetras tienda Games </h2>
+    <main>
+
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/117_06-02-2024-12-02-23-8000series.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/117_09-02-2024-02-02-26-es-rme_series-2-1920x400.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/117_10-01-2024-07-01-40-cm_general_mundo_itx-copia.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/117_15-03-2024-01-03-41-1920x400.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/117_26-03-2024-04-03-36-jonsbo.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </main>
+
+    <h2>Las mejores marcas</h2>
+
+
+    <div class="card-group">
+        <div class="card">
+            <img src="img/amd.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">AMD</h5>
+                <p class="card-text">Los procesadores para servidores x86 más potentes del mundo4 llevan el rendimiento,
+                    la seguridad y la escalabilidad a niveles superiores..</p>
+                    <a href="AMD.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/asus.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">ASU</h5>
+                <p class="card-text">La serie ASUS Prime está diseñada por expertos para liberar todo el potencial de
+                    los procesadores AMD e Intel</p>
+                    <a href="asus.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/coolermaster_logo.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">COOLER MASTER</h5>
+                <p class="card-text">Construir una PC es un viaje muy personalizado. Sabemos que los componentes se
+                    eligen cuidadosamente en función del precio, la funcionalidad y la preferencia estética</p>
+                    <a href="coole.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Games Nexus Todos los derechos reservados</p>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+        
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

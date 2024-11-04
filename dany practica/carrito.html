@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+</head>
+<body>
+
+    <h2>Carrito de Compras</h2>
+<div id="carrito"></div>
+<p>Total: $<span id="total"></span></p>
+<button onclick="procesarPedido()">Realizar Pedido</button>
+
+<script>
+    function mostrarCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const carritoDiv = document.getElementById('carrito');
+    carritoDiv.innerHTML = '';
+
+    let total = 0;
+    carrito.forEach((producto, index) => {
+        total += producto.precio * producto.cantidad;
+        carritoDiv.innerHTML += `
+            <div>
+                <p>${producto.nombre} - $${producto.precio} x ${producto.cantidad}</p>
+                <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
+            </div>
+        `;
+    });
+
+    document.getElementById('total').innerText = total;
+}
+
+
+mostrarCarrito();
+
+</script> 
+
+</body>
+</html>
